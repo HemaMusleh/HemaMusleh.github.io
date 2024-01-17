@@ -49,6 +49,35 @@
             height: auto;
             margin: 20px 0;
         }
+
+        .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        /* transition: 0.3s; */
+        max-width: 26%;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        border-color: #4CAF50;
+        border-style: dashed;
+        
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+        padding: 2px 16px;
+        }
+
+        #cards {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+
+
     </style>
 </head>
 
@@ -72,31 +101,41 @@
             Welcome to the Pollution Awareness website. This platform aims to educate and create awareness about the various types of pollution and the ways we can contribute to reducing its impact on our environment.
         </p>
         
+        <div id="cards">
 
-    <section id="types">
-        <h2>Types of Pollution</h2>
-        <p>
-            <strong>Air Pollution:</strong> This occurs when harmful substances are released into the air, affecting the quality of the air we breathe.
-        </p>
-        <p>
-            <strong>Water Pollution:</strong> Contamination of water bodies by pollutants, making it unsafe for aquatic life and human consumption.
-        </p>
-        <p>
-            <strong>Soil Contamination:</strong> The presence of hazardous substances in the soil, negatively impacting plant growth and contaminating the food chain.
-        </p>
+        <div class="card aircard">
+            <a href="https://hemamusleh.github.io/types.html"> 
+                <img src="ap.jpg" alt="Avatar" style="width:100%">
+            </a>
+            <div class="container">
+              <h4><b>Gas Pollution</b></h4>
+              <p>Sample</p>
+            </div>
+        </div>
+
+        <div class="card watercard">
+            <a href="https://hemamusleh.github.io/types.html"> 
+                <img src="wp.jpg" alt="Avatar" style="width:100%">
+            </a>
+            <div class="container">
+              <h4><b>Water pollution</b></h4>
+              <p>Sample</p>
+            </div>
+        </div>
+
+        <div class="card landcard">
+            <a href="https://hemamusleh.github.io/types.html"> 
+                <img src="lp.jpg" alt="Avatar" style="width:100%">
+            </a>
+            <div class="container">
+              <h4><b>Land pollution Doe</b></h4>
+              <p>Sample</p>
+            </div>
+        </div>
         
-        <h2>Ways to Reduce Pollution</h2>
-        <p>
-            <strong>1. Reduce, Reuse, Recycle:</strong> Minimize waste by following the three Rs to decrease the amount of garbage that ends up in landfills.
-        </p>
-        <p>
-            <strong>2. Use Sustainable Transportation:</strong> Opt for eco-friendly modes of transportation, such as walking, cycling, or using public transport.
-        </p>
-        <p>
-            <strong>3. Support Clean Energy:</strong> Promote and use renewable energy sources like solar and wind power to reduce dependence on fossil fuels.
-        </p>
         
-    </section>
+        </div>
+
 
 </body>
 </html>
